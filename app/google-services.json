@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1048028898389",
+    "firebase_url": "https://cylinderdataanalyzer-ccf83.firebaseio.com",
+    "project_id": "cylinderdataanalyzer-ccf83",
+    "storage_bucket": "cylinderdataanalyzer-ccf83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048028898389:android:cf9e6b6256554427abe0dc",
+        "android_client_info": {
+          "package_name": "com.example.dhawal.cylinderdataanalyser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048028898389-h8prka9f7mvrj35bcct3knvj8lhs60f4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dhawal.cylinderdataanalyser",
+            "certificate_hash": "aedcdc6e03b8c2372aec96fbcb0184914bb46e93"
+          }
+        },
+        {
+          "client_id": "1048028898389-htk1st5veesujfbl0sl60g20do6n6qoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dhawal.cylinderdataanalyser",
+            "certificate_hash": "81815f6f6b33bf1adaa697c90bc8ce53aee892ef"
+          }
+        },
+        {
+          "client_id": "1048028898389-c65ionp4gnp119vi6disdj9fs750s0p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxzc3Xp1PpY9JdaPNihUNbGSnWx1ceGqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048028898389-c65ionp4gnp119vi6disdj9fs750s0p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

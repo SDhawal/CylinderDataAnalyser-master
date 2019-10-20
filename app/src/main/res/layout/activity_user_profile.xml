@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainrel"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relprof1"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Profile Details Here"
+        android:textColor="@color/gradStart"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relprof2"
+            android:layout_below="@+id/relprof1"
+            android:layout_marginTop="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#333945"
+                android:src="@drawable/profilepic" />
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/profprog1"
+                />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linprof1"
+        android:orientation="vertical"
+        android:layout_below="@+id/relprof2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:hint="Full Name"
+            android:background="@drawable/et_bg"
+            android:textColor="@color/gradStart"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="70dp"
+            android:textColorHint="@color/gradStart"
+            android:id="@+id/name"
+            />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_bg"
+            android:duplicateParentState="false"
+            android:editable="true"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textAlignment="center"
+            android:textColor="@color/gradStart"
+            android:textColorHint="@color/gradStart" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:hint="Gender"
+            android:background="@drawable/et_bg"
+            android:textColor="@color/gradStart"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="70dp"
+            android:textColorHint="@color/gradStart"
+            android:id="@+id/gender"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:hint="Age"
+            android:background="@drawable/et_bg"
+            android:textColor="@color/gradStart"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="70dp"
+            android:textColorHint="@color/gradStart"
+            android:id="@+id/age"
+            android:maxLength="3"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linprof2"
+        android:layout_below="@+id/linprof1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profbutton1"
+            android:text="Save Details"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/btn_bg"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:textAlignment="center"
+
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profbutton2"
+            android:text="Edit Details"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/btn_bg"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:textAlignment="center"
+            android:enabled="false"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
