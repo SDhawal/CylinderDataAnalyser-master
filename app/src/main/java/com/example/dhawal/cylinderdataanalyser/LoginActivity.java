@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,8 +22,9 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
     Button Login_btn;
     EditText Username_Login,Password_Login;
-    TextView signin;
+    TextView signin,forgetpss;
     FirebaseAuth mFirebaseAuth;
+    ProgressBar LprogressBar;
     private FirebaseAuth.AuthStateListener mAuthStateListner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,9 @@ public class LoginActivity extends AppCompatActivity {
         Username_Login=findViewById(R.id.username_login);
         Password_Login=findViewById(R.id.psswd_login);
         signin=findViewById(R.id.tvsignup);
+        LprogressBar=findViewById(R.id.progressBar);
+        forgetpss=findViewById(R.id.forgetpwd);
+
         mAuthStateListner=new FirebaseAuth.AuthStateListener() {
 
             @Override
@@ -48,6 +54,33 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         };
+        forgetpss.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email=Username_Login.getText().toString();
+                if(TextUtils.isEmpty(email))
+                {
+                    Toast.makeText(LoginActivity.this, "Enter your registered email id", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                LprogressBar.setVisibility(View.VISIBLE);
+                mFirebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener
+                        (new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                               if (task.isSuccessful())
+                               {
+                                   Toast.makeText(LoginActivity.this, "We have sent you instructions to reset your password! on your e-mail id", Toast.LENGTH_SHORT).show();
+                               }
+                               else{
+                                   Toast.makeText(LoginActivity.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                               }
+                                LprogressBar.setVisibility(View.GONE);
+                            }
+                        });
+
+            }
+        });
         Login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

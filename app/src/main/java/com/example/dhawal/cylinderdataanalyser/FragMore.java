@@ -82,6 +82,8 @@ SimpleAdapter adapter;
                else if(pos==4)
                {
                    Toast.makeText(getContext(), "Setting", Toast.LENGTH_SHORT).show();
+                   Intent intent=new Intent(getActivity(),Settings.class);
+                   startActivity(intent);
                }
                else if(pos==5)
                {
