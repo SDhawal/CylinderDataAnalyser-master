@@ -70,14 +70,20 @@ SimpleAdapter adapter;
                else if(pos==1)
                {
                    Toast.makeText(getContext(), "Alert", Toast.LENGTH_SHORT).show();
+                   Intent intent=new Intent(getActivity(),Alert.class);
+                   startActivity(intent);
                }
                else if(pos==2)
                {
                    Toast.makeText(getContext(), "Graphic utilization", Toast.LENGTH_SHORT).show();
+                   Intent intent=new Intent(getActivity(),GraphicalUtilization.class);
+                   startActivity(intent);
                }
                else if(pos==3)
                {
                    Toast.makeText(getContext(), "Tips", Toast.LENGTH_SHORT).show();
+                   Intent intent=new Intent(getActivity(),Tips.class);
+                   startActivity(intent);
                }
                else if(pos==4)
                {
@@ -88,6 +94,8 @@ SimpleAdapter adapter;
                else if(pos==5)
                {
                    Toast.makeText(getContext(), "Contact", Toast.LENGTH_SHORT).show();
+                   Intent intent=new Intent(getActivity(),ContactUs.class);
+                   startActivity(intent);
                }
                else if(pos==6)
                {
