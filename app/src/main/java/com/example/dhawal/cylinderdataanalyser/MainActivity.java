@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
        // mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Today()).commit();
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         mFirebaseAuth=FirebaseAuth.getInstance();
     }

@@ -25,9 +25,9 @@ public class FragMore extends ListFragment {
 ListView list;
 FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListner;
-String[] mainStr={"User","Alert","Graphic Utilization","Tips","Settings","Contact/Support","Logout"};
+String[] mainStr={"User","Alert","Graphic Utilization","Tips","Contact/Support","Logout"};
 Integer[] imgid={R.drawable.ic_account_24dp,R.drawable.ic_alert_black_24dp,R.drawable.ic_graphic_black_24dp,R.drawable.ic_tips_black_24dp
-,R.drawable.ic_settings_black_24dp,R.drawable.ic_support_black_24dp,R.drawable.ic_logout_black_24dp};
+,R.drawable.ic_support_black_24dp,R.drawable.ic_logout_black_24dp};
 ArrayList<HashMap<String,String>> data=new ArrayList<HashMap<String, String>>();
 SimpleAdapter adapter;
 
@@ -87,17 +87,11 @@ SimpleAdapter adapter;
                }
                else if(pos==4)
                {
-                   Toast.makeText(getContext(), "Setting", Toast.LENGTH_SHORT).show();
-                   Intent intent=new Intent(getActivity(),Settings.class);
-                   startActivity(intent);
-               }
-               else if(pos==5)
-               {
                    Toast.makeText(getContext(), "Contact", Toast.LENGTH_SHORT).show();
                    Intent intent=new Intent(getActivity(),ContactUs.class);
                    startActivity(intent);
                }
-               else if(pos==6)
+               else if(pos==5)
                {
                     FirebaseAuth.getInstance().signOut();
                     Intent intoMain=new Intent(getActivity(),FirstScreen.class);

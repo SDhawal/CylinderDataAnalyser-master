@@ -5,19 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@color/white">
+    android:background="@color/yellowbg">
 
 
     <ImageView
         android:id="@+id/imageView_login"
         android:layout_width="212dp"
         android:layout_height="175dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="99dp"
-        android:layout_marginTop="47dp"
-        app:srcCompat="@drawable/cylinder" />
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/username_login"

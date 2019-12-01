@@ -8,5 +8,8 @@
     <color name="white">#FFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="black">#2C3335</color>
+    <color name="title">#C9D505</color>
+    <color name="tipsbg">#B62C02</color>
+    <color name="yellowbg">	#FFC056</color>
     <!-- #7A5C82-->
 </resources>

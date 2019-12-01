@@ -5,34 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp"
-    android:background="@color/white">
+    android:background="@color/yellowbg">
 
     <ImageView
         android:id="@+id/imageView_signup"
         android:layout_width="212dp"
         android:layout_height="175dp"
-        android:src="@drawable/cylinder"
+        android:src="@drawable/logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"/>
+
+
     <EditText
         android:id="@+id/username_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/et_bg"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
         android:padding="20dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:textColor="@color/gradStart"
-        android:textColorHint="@color/gradStart"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:background="@drawable/et_bg"
-        android:layout_marginBottom="10dp"/>
-
+        android:textColorHint="@color/gradStart" />
 
     <EditText
         android:id="@+id/psswd_signup"
