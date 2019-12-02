@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".GraphicalUtilization">
+    tools:context=".GraphicalUtilization"
+    android:background="@color/yellowbg">
     <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:id="@+id/graph" />
+        android:id="@+id/graph"
+        android:background="@color/cbg"/>
 
     <TextView
 

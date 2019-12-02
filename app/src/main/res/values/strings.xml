@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CylinderDataAnalyser</string>
+    <string name="app_name">Cylinder Data Analyzer</string>
     <string name="title_home">Today</string>
     <string name="title_dashboard">History</string>
     <string name="title_notifications">More</string>
